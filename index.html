@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://pbs.twimg.com/profile_images/1351409184932171776/B50doHc0_400x400.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <h1 id="welcome-text">Hi [Name], Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="resolution-placeholder">1366x578</div>
+  </section>
+
+  <!-- Our Headquarter Section -->
+<section id="headquarter" class="headquarter-section">
+  <h2>Our Headquarter</h2>
+  <div class="headquarter-locations">
+    <div class="location">
+      <div class="circle"></div>
+      <p>Jakarta</p>
+    </div>
+    <div class="location">
+      <div class="circle"></div>
+      <p>Bandung</p>
+    </div>
+    <div class="location">
+      <div class="circle"></div>
+      <p>Surabaya</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Message Us Section -->
+<section id="contact" class="contact-section">
+  <h2>Message Us</h2>
+  <div class="form-container">
+    <!-- Form -->
+    <form id="messageForm">
+      <div class="form-group">
+        <label for="name">Nama :</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="birthdate">Tanggal Lahir :</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Jenis Kelamin :</label>
+        <label><input type="radio" name="gender" value="Laki - Laki" required> Laki-Laki</label>
+        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Pesan :</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Output -->
+    <div class="output-box" id="outputBox">
+      <p><strong>Current time :</strong> <span id="currentTime"></span></p>
+      <p><strong>Nama :</strong> <span id="outputName"></span></p>
+      <p><strong>Tanggal Lahir :</strong> <span id="outputBirthdate"></span></p>
+      <p><strong>Jenis Kelamin :</strong> <span id="outputGender"></span></p>
+      <p><strong>Pesan :</strong> <span id="outputMessage"></span></p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <p>Created By RevoU</p>
+</footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
